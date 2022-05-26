@@ -59,7 +59,8 @@ INSERT INTO pedidos_item (pedido_id, item_id) values(2,1);
 
 
 * -- select
-* 
+
+
 -- Metas da empresa
 
 SELECT e.nome, m.meta_faturamento, m.novos_clientes
