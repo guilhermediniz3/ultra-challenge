@@ -16,7 +16,8 @@
 
 
 * -- Inserindo empresas 
-* 
+
+
 insert into empresa(id,cnpj,nome) values (default,'12345678', 'ultra');
 insert into empresa(id,cnpj,nome) values (default,'12345678', 'ultrateste');
 select * from empresa
