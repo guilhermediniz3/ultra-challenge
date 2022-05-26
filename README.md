@@ -14,7 +14,8 @@
  * ![diagrama](https://user-images.githubusercontent.com/56515739/170579902-aa6e6015-b9c4-4a12-badd-83cc302f2eca.jpg)
 
 
-* -- Inserindo empresas *
+* -- Inserindo empresas 
+* 
 insert into empresa(id,cnpj,nome) values (default,'12345678', 'ultra');
 insert into empresa(id,cnpj,nome) values (default,'12345678', 'ultrateste');
 select * from empresa
@@ -56,6 +57,7 @@ INSERT INTO pedidos_item (pedido_id, item_id) values(2,1);
 
 
 * -- select
+* 
 -- Metas da empresa
 
 SELECT e.nome, m.meta_faturamento, m.novos_clientes
