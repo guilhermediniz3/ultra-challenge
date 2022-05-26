@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "0c8c7759-c248-4745-ac7e-7761e38e1473",
+		"name": "challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14315166"
+	},
+	"item": [
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "get empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/empresas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "empresa por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"nome\" : \"Ultrateste\",\r\n\"cnpj\" : \"344456677\"\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete empresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"nome\" : \"Ultrateste\",\r\n\"cnpj\" : \"344456677\"\r\n\r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/empresas/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
